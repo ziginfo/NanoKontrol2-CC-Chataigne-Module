@@ -8,11 +8,11 @@ Connect the USB cable from your computer to the nanoKONTROL2 and engage CC mode.
 function ccEvent(channel, number, value)
 {  
  //Rotaries
-	if(channel==1 && number >= 16 && number <= 23){
+	if(number >= 16 && number <= 23){
        		var index = number-16;
        		local.values.strips.getChild('Strip '+(index+1)).rotaryValue.set(value);    }            
  //Faders            
-         if(channel==1 && number >= 0 && number <= 7){
+         if(number >= 0 && number <= 7){
         	var index = number;
             	local.values.strips.getChild('Strip '+(index+1)).faderValue.set(value);    }        
 //Rec Button
