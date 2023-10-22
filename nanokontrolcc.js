@@ -1,5 +1,5 @@
 /*
-This script is for the General-MIDI-Mode
+This script is for the General-MIDI CC-Mode
 While pressing and holding down the SET MARKER and CYCLE buttons
 Connect the USB cable from your computer to the nanoKONTROL2 and engage CC mode.
 */
