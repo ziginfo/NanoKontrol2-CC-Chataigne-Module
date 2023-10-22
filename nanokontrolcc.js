@@ -33,26 +33,19 @@ function init()
 
 //Upon receiving MIDI Control Change message
 function ccEvent(channel, number, value)
-{   
- //Faders
-    	if (number == 0) {local.values.strips.strip1.faderValue.set(value);}
-        if (number == 1) {local.values.strips.strip2.faderValue.set(value);}
-        if (number == 2) {local.values.strips.strip3.faderValue.set(value);}
-        if (number == 3) {local.values.strips.strip4.faderValue.set(value);}
-        if (number == 4) {local.values.strips.strip5.faderValue.set(value);}
-        if (number == 5) {local.values.strips.strip6.faderValue.set(value);}
-        if (number == 6) {local.values.strips.strip7.faderValue.set(value);}
-        if (number == 7) {local.values.strips.strip8.faderValue.set(value);}
-        
-//Encoders
-    	if (number == 16) {local.values.strips.strip1.rotaryValue.set(value);}
-        if (number == 17) {local.values.strips.strip2.rotaryValue.set(value);}
-        if (number == 18) {local.values.strips.strip3.rotaryValue.set(value);}
-        if (number == 19) {local.values.strips.strip4.rotaryValue.set(value);}
-        if (number == 20) {local.values.strips.strip5.rotaryValue.set(value);}
-        if (number == 21) {local.values.strips.strip6.rotaryValue.set(value);}
-        if (number == 22) {local.values.strips.strip7.rotaryValue.set(value);}
-        if (number == 23) {local.values.strips.strip8.rotaryValue.set(value);}
+{  
+
+
+ //Rotaries
+		if(channel==1 && number >= 16 && number <= 23){
+       		var index = number-16;
+       		local.values.strips.getChild('Strip '+(index+1)).rotaryValue.set(value);    }
+            
+            
+ //Faders            
+         if(channel==1 && number >= 0 && number <= 7){
+        	var index = number;
+            local.values.strips.getChild('Strip '+(index+1)).faderValue.set(value);    }
         
 //Rec Button
 		if (number >= 64 && number <= 71){
