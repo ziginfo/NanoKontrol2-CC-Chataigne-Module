@@ -4,32 +4,7 @@ While pressing and holding down the SET MARKER and CYCLE buttons
 Connect the USB cable from your computer to the nanoKONTROL2 and engage CC mode.
 */
 
-
-
-function init()
-{
-    script.log();
-
-    //Synchronize Arrays 1-7
-    for(counter=0;counter<8;counter++){
-       
-        //Init Mute
-        local.sendNoteOn(1,counter+16,local.values.strips.getChild('Strip '+(counter+1)).mute.get());
-        //Init Solo
-        local.sendNoteOn(1,counter+8,local.values.strips.getChild('Strip '+(counter+1)).solo.get());
-        //Init Rec
-        local.sendNoteOn(1,counter+0,local.values.strips.getChild('Strip '+(counter+1)).rec.get());
-        
-        
-    }
-
-    
-
-}
-
-
-//Request MIDI Control Change Values
-
+//Request MIDI Control Change message
 function ccEvent(channel, number, value)
 {  
 
