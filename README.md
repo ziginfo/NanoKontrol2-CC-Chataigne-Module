@@ -6,7 +6,7 @@ hold buttons SET and CYCLE at startup
 
 Be aware that the Feedback only responds correctly if you use the Default Factory Setting for CC-Mode...!!! As soon as you edit and customize the controlers settings with the "KORG KONTROL Editor.app" the module might not respond correctly anymore !!
 
-If you wanna see the "Defaults-Commands" you should edit the module.json File and set "hideDefaultCommands":true, to false
+If you want to see the "Defaults-Commands" you should edit the module.json File and set "hideDefaultCommands":true, to false
 
 if you want to use the Controler in Mackie-Control-Mode, please see my other module
 at Github : https://github.com/ziginfo/NanoKontrol2-Chataigne-Module
