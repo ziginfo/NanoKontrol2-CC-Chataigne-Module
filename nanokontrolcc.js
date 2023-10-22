@@ -27,11 +27,9 @@ function init()
 
 }
 
-//*****MIDI MODULE SPECIFIC SCRIPTS*****
 
+//Request MIDI Control Change Values
 
-
-//Upon receiving MIDI Control Change message
 function ccEvent(channel, number, value)
 {  
 
