@@ -10,7 +10,7 @@ function ccEvent(channel, number, value)
 
 
  //Rotaries
-		if(channel==1 && number >= 16 && number <= 23){
+	if(channel==1 && number >= 16 && number <= 23){
        		var index = number-16;
        		local.values.strips.getChild('Strip '+(index+1)).rotaryValue.set(value);    }
             
@@ -18,22 +18,22 @@ function ccEvent(channel, number, value)
  //Faders            
          if(channel==1 && number >= 0 && number <= 7){
         	var index = number;
-            local.values.strips.getChild('Strip '+(index+1)).faderValue.set(value);    }
+            	local.values.strips.getChild('Strip '+(index+1)).faderValue.set(value);    }
         
 //Rec Button
-		if (number >= 64 && number <= 71){
-        var index = number-64;
-       local.values.strips.getChild('Strip '+(index+1)).rec.set(value); } 
+	if (number >= 64 && number <= 71){
+        	var index = number-64;
+       		local.values.strips.getChild('Strip '+(index+1)).rec.set(value); } 
             
 //Solo Button
-		if (number >= 32 && number <= 39){
-        var index = number-32;
+	if (number >= 32 && number <= 39){
+        	var index = number-32;
 		local.values.strips.getChild('Strip '+(index+1)).solo.set(value); }
             
 //Mute Button
-		if (number >= 48 && number <= 55){
-        var index = number-48;
-       local.values.strips.getChild('Strip '+(index+1)).mute.set(value);  } 
+	if (number >= 48 && number <= 55){
+        	var index = number-48;
+       		local.values.strips.getChild('Strip '+(index+1)).mute.set(value);  } 
             
 //Transport
     	if (number == 43) {local.values.transport.rewind.set(value);}
