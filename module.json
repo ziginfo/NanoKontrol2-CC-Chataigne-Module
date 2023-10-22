@@ -31,7 +31,8 @@
 	"hideDefaultParameters":
 	[
 		"autoAdd",
-		"autoFeedback"
+		"autoFeedback",
+		"useHierarchy"
 	],
 
 
@@ -142,12 +143,36 @@
 		}
 	},
 	
+	
+"commands":
+	{		
+	
+	"Send ControlChange" : {
+			"menu" : "",
+			"callback" : "send_control",
+			"parameters" : {
+			
+			"MIDI Channel": {
+					"type": "Integer",
+					"default": 1, 
+					"min":1,
+					"max":16,
+					"useForMapping": true },
+					
+			"Set Controler N°": {
+					"type": "Integer",
+					"default": 1, 
+					"min":0,
+					"max":127,
+					"useForMapping": true },
+					
+			"Set Value": {
+					"type": "Integer",
+					"default": 1, 
+					"min":0,
+					"max":12,
+					"useForMapping": true }
+		}  },
 		
-	
-	"commands":
-	{
-	
-	
 		
-	}
-}
+} }
