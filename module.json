@@ -52,72 +52,72 @@
 				"collapsed":true,
 				"RotaryValue": {"type":"Float", "min":0, "max":127},
 				"FaderValue":   { "type":"Float", "min":0,"max":127},
-				"Solo": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},
-				"Mute": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},
-				"Rec": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}}
+				"Solo": {"type":"Boolean", "readOnly":true},
+				"Mute":{"type":"Boolean", "readOnly":true},
+				"Rec":{"type":"Boolean", "readOnly":true}
 			},
 			"Strip 2":{
 				"type":"Container",
 				"collapsed":true,
 				"RotaryValue": {"type":"Float", "min":0, "max":127},
 				"FaderValue":   { "type":"Float", "min":0,"max":127},
-				"Solo": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},
-				"Mute": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},
-				"Rec": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}}
+				"Solo": {"type":"Boolean", "readOnly":true},
+				"Mute":{"type":"Boolean", "readOnly":true},
+				"Rec":{"type":"Boolean", "readOnly":true}
 			},
 			"Strip 3":{
 				"type":"Container",
 				"collapsed":true,
 				"RotaryValue": {"type":"Float", "min":0, "max":127},
 				"FaderValue":   { "type":"Float", "min":0,"max":127},
-				"Solo": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},
-				"Mute": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},
-				"Rec": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}}
+				"Solo": {"type":"Boolean", "readOnly":true},
+				"Mute":{"type":"Boolean", "readOnly":true},
+				"Rec":{"type":"Boolean", "readOnly":true}
 			},
 			"Strip 4":{
 				"type":"Container",
 				"collapsed":true,
 				"RotaryValue": {"type":"Float", "min":0, "max":127},				
 				"FaderValue":   { "type":"Float", "min":0,"max":127},
-				"Solo": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},
-				"Mute": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},				
-				"Rec": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}}
+				"Solo": {"type":"Boolean", "readOnly":true},
+				"Mute":{"type":"Boolean", "readOnly":true},				
+				"Rec":{"type":"Boolean", "readOnly":true}
 			},
 			"Strip 5":{
 				"type":"Container",
 				"collapsed":true,
 				"RotaryValue": {"type":"Float", "min":0, "max":127},
 				"FaderValue":   { "type":"Float", "min":0,"max":127},
-				"Solo": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},
-				"Mute": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},				
-				"Rec": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}}
+				"Solo": {"type":"Boolean", "readOnly":true},
+				"Mute":{"type":"Boolean", "readOnly":true},				
+				"Rec":{"type":"Boolean", "readOnly":true}
 			},
 			"Strip 6":{
 				"type":"Container",
 				"collapsed":true,
 				"RotaryValue": {"type":"Float", "min":0, "max":127},				
 				"FaderValue":   { "type":"Float", "min":0,"max":127},		
-				"Solo": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},
-				"Mute": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},				
-				"Rec": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}}
+				"Solo": {"type":"Boolean", "readOnly":true},
+				"Mute":{"type":"Boolean", "readOnly":true},				
+				"Rec":{"type":"Boolean", "readOnly":true}
 			},
 			"Strip 7":{
 				"type":"Container",
 				"collapsed":true,
 				"RotaryValue": {"type":"Float", "min":0, "max":127},				
 				"FaderValue":   { "type":"Float", "min":0,"max":127},	
-				"Solo": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},
-				"Mute": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},	
-				"Rec": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}}
+				"Solo": {"type":"Boolean", "readOnly":true},
+				"Mute":{"type":"Boolean", "readOnly":true},	
+				"Rec":{"type":"Boolean", "readOnly":true}
 			},
 			"Strip 8":{
 				"type":"Container",
 				"collapsed":true,
 				"RotaryValue": {"type":"Float", "min":0, "max":127},
 				"FaderValue":   { "type":"Float", "min":0,"max":127},
-				"Solo": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},
-				"Mute": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}},
-				"Rec": {"type":"Enum", "readOnly":true, "options": {"off":0, "flash":1, "on":127}}
+				"Solo": {"type":"Boolean", "readOnly":true},
+				"Mute":{"type":"Boolean", "readOnly":true},
+				"Rec":{"type":"Boolean", "readOnly":true}
 			} },
 			
 		"Transport":{
@@ -136,7 +136,7 @@
 			"TrackLeft":{"type":"Boolean", "readOnly":true},
 			"TrackRight":{"type":"Boolean", "readOnly":true},
 			"Cycle":{"type":"Boolean", "readOnly":true},
-			"SetBout":{"type":"Boolean", "readOnly":true},
+			"SetButton":{"type":"Boolean", "readOnly":true},
 			"MarkLeft":{"type":"Boolean", "readOnly":true},
 			"MarkRight":{"type":"Boolean", "readOnly":true}
 		}

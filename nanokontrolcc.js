@@ -50,26 +50,17 @@ function ccEvent(channel, number, value)
 //Rec Button
 		if (number >= 64 && number <= 71){
         var index = number-64;
-        if (local.values.strips.getChild('Strip '+(index+1)).rec.get()==0){
-            local.values.strips.getChild('Strip '+(index+1)).rec.set("on");
-        }else{
-            local.values.strips.getChild('Strip '+(index+1)).rec.set("off");  }   } 
+       local.values.strips.getChild('Strip '+(index+1)).rec.set(value); } 
             
 //Solo Button
 		if (number >= 32 && number <= 39){
         var index = number-32;
-        if (local.values.strips.getChild('Strip '+(index+1)).solo.get()==0){
-            local.values.strips.getChild('Strip '+(index+1)).solo.set("on");
-        }else{
-            local.values.strips.getChild('Strip '+(index+1)).solo.set("off");  }   } 
+		local.values.strips.getChild('Strip '+(index+1)).solo.set(value); }
             
 //Mute Button
 		if (number >= 48 && number <= 55){
         var index = number-48;
-        if (local.values.strips.getChild('Strip '+(index+1)).mute.get()==0){
-            local.values.strips.getChild('Strip '+(index+1)).mute.set("on");
-        }else{
-            local.values.strips.getChild('Strip '+(index+1)).mute.set("off");  }   } 
+       local.values.strips.getChild('Strip '+(index+1)).mute.set(value);  } 
             
 //Transport
     	if (number == 43) {local.values.transport.rewind.set(value);}
@@ -82,7 +73,7 @@ function ccEvent(channel, number, value)
     	if (number == 58) {local.values.misc.trackLeft.set(value);}
         if (number == 59) {local.values.misc.trackRight.set(value);}
         if (number == 46) {local.values.misc.cycle.set(value);}
-        if (number == 60) {local.values.misc.setBout.set(value);}
+        if (number == 60) {local.values.misc.setButton.set(value);}
         if (number == 61) {local.values.misc.markLeft.set(value);}
         if (number == 62) {local.values.misc.markRight.set(value);}     
         
